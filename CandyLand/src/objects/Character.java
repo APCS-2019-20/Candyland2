@@ -5,14 +5,14 @@ public class Character
 	//Jon
 	
 	private static String gamePiece;
-	private static String birthday;
+	private static int location;
 	private static boolean skip;
 	private static boolean stuck;
 	
-	public Character(String g, String b, boolean sk, boolean st)
+	public Character(String g, int l, boolean sk, boolean st)
 	{
 		setGamePiece(g);
-		setBirthday(b);
+		setLocation(l);
 		setSkip(sk);
 		setStuck(st);
 	}
@@ -26,15 +26,12 @@ public class Character
 	{
 		Character.gamePiece = gamePiece;
 	}
-
-	public static String getBirthday() 
-	{
-		return birthday;
+	public static int getLocation() {
+		return location;
 	}
 
-	public static void setBirthday(String birthday) 
-	{
-		Character.birthday = birthday;
+	public static void setLocation(int location) {
+		Character.location = location;
 	}
 
 	public static boolean getSkip() 
