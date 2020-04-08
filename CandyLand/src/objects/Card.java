@@ -1,12 +1,12 @@
 package objects;
 
-public class cards {
+public class Card {
 //Danielle
 	
 	private String name;
 	private int spaceCount;
 	
-	public cards(String n,int sC )
+	public Card(String n,int sC )
 	{
 		name = n;
 		spaceCount = sC;
