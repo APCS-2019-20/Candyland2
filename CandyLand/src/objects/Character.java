@@ -1,6 +1,6 @@
 package objects;
 
-public class character 
+public class Character 
 {
 	//Jon
 	
@@ -9,7 +9,7 @@ public class character
 	private static boolean skip;
 	private static boolean stuck;
 	
-	public character(String g, String b, boolean sk, boolean st)
+	public Character(String g, String b, boolean sk, boolean st)
 	{
 		setGamePiece(g);
 		setBirthday(b);
@@ -24,7 +24,7 @@ public class character
 
 	public static void setGamePiece(String gamePiece) 
 	{
-		character.gamePiece = gamePiece;
+		Character.gamePiece = gamePiece;
 	}
 
 	public static String getBirthday() 
@@ -34,7 +34,7 @@ public class character
 
 	public static void setBirthday(String birthday) 
 	{
-		character.birthday = birthday;
+		Character.birthday = birthday;
 	}
 
 	public static boolean getSkip() 
@@ -44,7 +44,7 @@ public class character
 
 	public static void setSkip(boolean skip) 
 	{
-		character.skip = skip;
+		Character.skip = skip;
 	}
 
 	public static boolean getStuck() 
@@ -54,6 +54,6 @@ public class character
 
 	public static void setStuck(boolean stuck) 
 	{
-		character.stuck = stuck;
+		Character.stuck = stuck;
 	}
 }
