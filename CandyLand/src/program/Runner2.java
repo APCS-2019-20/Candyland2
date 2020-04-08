@@ -15,6 +15,7 @@ public class Runner2
 		//var
 		Card draw;
 		Character playa;
+		String win;
 		//begining
 		intro.greeting();
 		settup.startup();
@@ -32,7 +33,7 @@ public class Runner2
 		//end
 		exit.win(data.turn);
 	}
-	public static int findClosest(int loc)
+	public static int findClosest()
 	{
 		
 	}

@@ -5,13 +5,13 @@ public class Card {
 	
 	private String name;
 	private String place;
-	private boolean doubl;
+	private int count;
 	
-	public Card(String n, String p, boolean d)
+	public Card(String n, String p, int c)
 	{
 		name = n;
-		setPlace(p);
-		setDoubl(d);
+		place = p;
+		count = c;
 	}
 
 	public String getName() {
@@ -32,14 +32,14 @@ public class Card {
 		this.place = place;
 	}
 
-	public boolean isDoubl()
+	public int getCount()
 	{
-		return doubl;
+		return count;
 	}
 
-	public void setDoubl(boolean doubl)
+	public void setCount(int count)
 	{
-		this.doubl = doubl;
+		this.count = count;
 	}
 	
 }
