@@ -1,5 +1,6 @@
 package program;
 
-public class setup {
+public class setup 
+{
 // Michael
 }
