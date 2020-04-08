@@ -4,12 +4,14 @@ public class Card {
 //Danielle
 	
 	private String name;
-	private int spaceCount;
+	private String place;
+	private boolean doubl;
 	
-	public Card(String n,int sC )
+	public Card(String n, String p, boolean d)
 	{
 		name = n;
-		spaceCount = sC;
+		setPlace(p);
+		setDoubl(d);
 	}
 
 	public String getName() {
@@ -20,11 +22,24 @@ public class Card {
 		this.name = name;
 	}
 
-	public int getSpaceCount() {
-		return spaceCount;
+	public String getPlace()
+	{
+		return place;
 	}
 
-	public void setSpaceCount(int spaceCount) {
-		this.spaceCount = spaceCount;
+	public void setPlace(String place)
+	{
+		this.place = place;
 	}
+
+	public boolean isDoubl()
+	{
+		return doubl;
+	}
+
+	public void setDoubl(boolean doubl)
+	{
+		this.doubl = doubl;
+	}
+	
 }

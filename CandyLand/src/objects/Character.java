@@ -2,8 +2,6 @@ package objects;
 
 public class Character 
 {
-	//Jon
-	
 	private static String gamePiece;
 	private static int location;
 	private static boolean skip;
