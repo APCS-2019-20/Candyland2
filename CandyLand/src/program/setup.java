@@ -1,10 +1,11 @@
 package program;
-import java.util.Scanner;
 
+import java.util.Scanner;
 import objects.Character;
-public class setup {
-// Michael
-	
+
+public class setup 
+{
+
 	public static void startup()
 	{
 		Scanner userInput = new Scanner (System.in);
