@@ -10,7 +10,7 @@ public class Runner2
 	{
 		//begining
 		intro.greeting();
-		settup.startup();
+		setup.startup();
 		//game
 		while(!atEnd())
 		{

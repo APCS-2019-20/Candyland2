@@ -5,12 +5,14 @@ public class Character
 	//Jon
 	
 	private static String gamePiece;
+	private static int location;
 	private static boolean skip;
 	private static boolean stuck;
 	
-	public Character(String g, boolean sk, boolean st)
+	public Character(String g, int l, boolean sk, boolean st)
 	{
 		setGamePiece(g);
+		setLocation(l);
 		setSkip(sk);
 		setStuck(st);
 	}
@@ -23,6 +25,13 @@ public class Character
 	public static void setGamePiece(String gamePiece) 
 	{
 		Character.gamePiece = gamePiece;
+	}
+	public static int getLocation() {
+		return location;
+	}
+
+	public static void setLocation(int location) {
+		Character.location = location;
 	}
 
 	public static boolean getSkip() 
