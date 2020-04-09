@@ -61,19 +61,28 @@ public class setup
 			data.board[0] = new Tile(data.colors[random], "",-1, false, false);
 		}
 	}
-	for(int k = 0; k < 61; k++)
-	{
-		random  =(int) Math.random()*6;	
-		if(k %18 ==0)
-		{
-			data.CARDS[k] = new Card(data.colors[random], 1);
-		}
-		else
-		{
-			data.CARDS[k] = new Card(data.colors[random], 0);
-		}
+
+
 		
 	}
+
+
+	public static void cards()
+	{
+		int random;
+	
+		for(int k = 0; k < 61; k++)
+		{
+			random  =(int) Math.random()*6;	
+			if(k %18 ==0)
+			{
+				data.CARDS[k] = new Card(data.colors[random], 1);
+			}
+			else
+			{
+				data.CARDS[k] = new Card(data.colors[random], 0);
+			}
+		}
 	}
 
 

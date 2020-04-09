@@ -4,15 +4,15 @@ public class Tile
 {
 	//var
 	private final String COLOR;
-	private final String LOCATION;
+	private final String PLACE;
 	private static int SHORTCUT; //set as -1 if none exist, otherwise take player to this location
 	private final boolean STUCK;
 	private final boolean SKIP;
 	//constructor
-	public Tile(String c, String l, int sh, boolean st, boolean sk)
+	public Tile(String c, String p, int sh, boolean st, boolean sk)
 	{
 		COLOR = c;
-		LOCATION = l;
+		PLACE = p;
 		SHORTCUT = sh;
 		STUCK = st;
 		SKIP = sk;
@@ -22,9 +22,9 @@ public class Tile
 	{
 		return(COLOR);
 	}
-	public String getLocation()
+	public String getPlace()
 	{
-		return(LOCATION);
+		return(PLACE);
 	}
 	public boolean getStuck()
 	{
