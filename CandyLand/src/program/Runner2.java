@@ -82,7 +82,7 @@ public class Runner2
 		{
 			if(Data.board[i].getPlace().equals(name))
 			{
-				closest = i; 
+				closest = i;  
 				System.out.println("You get to move " + (i-current+1) + " spaces.");
 				break;
 			}
