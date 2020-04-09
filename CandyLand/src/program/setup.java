@@ -66,7 +66,6 @@ public class setup
 		
 	}
 
-
 	public static void cards()
 	{
 		int random;
@@ -105,7 +104,7 @@ public class setup
 			
 			else
 			{
-				data.cards[k] = new Card(data.colors[random],  0);
+				data.cards[k] = new Card(data.colors[random], 0);
 			}
 		}
 	}
@@ -113,23 +112,13 @@ public class setup
 
 	public static void startup()
 	{
-	//	Scanner userInput = new Scanner (System.in);
-	//	Scanner userInput1 = new Scanner (System.in);
-	//	Scanner userInput2 = new Scanner (System.in);
-	//	Scanner userInput3 = new Scanner (System.in);
-		
-	//	int birth1 = userInput.nextInt();
-	//	int birth2 = userInput1.nextInt();
-	//	int birth3 = userInput2.nextInt();
-	//	int birth4 = userInput3.nextInt();
-		
-
-		data.players.add(new Character("Gingerbread man",0 , false, false ));
-		data.players.add(new Character("CandyCane",0 , false, false ));
-		data.players.add(new Character("Gumdrop",0 , false, false ));
-		data.players.add(new Character("Icecream Cone",0 , false, false ));
-
-
+    //	Scanner userInput = new Scanner (System.in);
+		board();
+		cards();
+		data.players.add(new Character("Gingerbread man", 0, false, false ));
+		data.players.add(new Character("CandyCane", 0, false, false ));
+		data.players.add(new Character("Gumdrop", 0, false, false ));
+		data.players.add(new Character("Icecream Cone", 0, false, false ));
 	}
 }
 	

@@ -7,25 +7,23 @@ public class intro {
 	public static void greeting()
 	{
 		Scanner userInput = new Scanner (System.in);
-		Scanner userInput1 = new Scanner (System.in);
-		Scanner userInput2 = new Scanner (System.in);
-		Scanner userInput3 = new Scanner (System.in);
 		
-		System.out.print("Hello, Welcome to Candyland.");
+		System.out.print("Hello, Welcome to Candyland. ");
 		System.out.println("What is your name?");
 		
-		String name = userInput1.nextLine();
+		String name = userInput.nextLine();
 		
-		System.out.println("Hello " + name + ". Welcome to Candyland.");
+		System.out.println("Hello " + name + ". Welcome to Candyland once again.");
 		
 		System.out.println("Would you like the rules?");
 		
-		String rules = userInput2.nextLine();
+		String rules = userInput.nextLine();
 		if( rules.equals("yes"))
 		{
 			System.out.println("Here are the rules");
 			
-			String ready = userInput3.nextLine();
+			System.out.println("Press enter to continue.");
+			String ready = userInput.nextLine();
 			
 			 if(ready.equals("ready"))
 			{
@@ -33,11 +31,10 @@ public class intro {
 			}
 		
 		}
-	if(rules.equals("no"))
+		if(rules.equals("no"))
 		{
 			System.out.println("Ok, let's get started");
 		}
-	
-}
 	}
+}
 

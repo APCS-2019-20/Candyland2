@@ -4,18 +4,8 @@ import objects.Tile;
 
 public class exit 
 {
-	public static void win(String win)
+	public static void win(String winner)
 	{
-		win = "";
-		for(int i = 0; i < board.length; i++)
-		{	
-			if(i == 134)
-			{
-				for(objects.Character won : players)
-				{
-					System.out.println("Congratulations, " + win + " you just won the game!");
-				}
-			}
-		}
-	}
+		System.out.println("Congratulations, " + winner + " you just won the game!");
+  }
 }
