@@ -2,7 +2,7 @@ package program;
 import java.util.ArrayList;
 import objects.Tile;
 
-public class exit 
+public class Exit 
 {
 	public static void win(String winner)
 	{
