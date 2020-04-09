@@ -123,14 +123,14 @@ public class Setup
 		board();
 		cards();
 		Data.players.add(new Character("Gingerbread man", 0, false, false));
-		System.out.println("Length: " + Data.players.size() + " Mostresent: " + Data.players.get(Data.players.size()-1).getGamePiece() + " Oldest: " + Data.players.get(0).getGamePiece());
+		//System.out.println("Length: " + Data.players.size() + " Mostresent: " + Data.players.get(Data.players.size()-1).getGamePiece() + " Oldest: " + Data.players.get(0).getGamePiece());
 		Data.players.add(new Character("CandyCane", 0, false, false ));
-		System.out.println("Length: " + Data.players.size() + " MostrResent: " + Data.players.get(Data.players.size()-1).getGamePiece() + " Oldest: " + Data.players.get(0).getGamePiece());
+		//System.out.println("Length: " + Data.players.size() + " MostrResent: " + Data.players.get(Data.players.size()-1).getGamePiece() + " Oldest: " + Data.players.get(0).getGamePiece());
 		Data.players.add(new Character("Gumdrop", 0, false, false ));
-		System.out.println("Length: " + Data.players.size() + " MostResent: " + Data.players.get(Data.players.size()-1).getGamePiece() + " Oldest: " + Data.players.get(0).getGamePiece());
+		//System.out.println("Length: " + Data.players.size() + " MostResent: " + Data.players.get(Data.players.size()-1).getGamePiece() + " Oldest: " + Data.players.get(0).getGamePiece());
 		Data.players.add(new Character("Icecream Cone", 0, false, false));
-		System.out.println("Length: " + Data.players.size() + " MostResent: " + Data.players.get(Data.players.size()-1).getGamePiece() + " Oldest: " + Data.players.get(0).getGamePiece());
-		System.out.println("");
+		//System.out.println("Length: " + Data.players.size() + " MostResent: " + Data.players.get(Data.players.size()-1).getGamePiece() + " Oldest: " + Data.players.get(0).getGamePiece());
+		//System.out.println("");
 	}
 }
 	

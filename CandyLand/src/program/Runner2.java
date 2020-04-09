@@ -33,7 +33,7 @@ public class Runner2
 			if(!playa.getSkip())
 			{
 				System.out.println("Press enter to draw a card.");
-				enta.nextLine();
+				enta.nextLine(); 
 			}
 			//unstickStickers
 			if(draw.getName().equals(Data.board[playa.getLocation()].getColor()) && playa.getStuck())
@@ -82,7 +82,7 @@ public class Runner2
 		{
 			if(Data.board[i].getPlace().equals(name))
 			{
-				closest = i;
+				closest = i;  
 				System.out.println("You get to move " + (i-current+1) + " spaces.");
 				break;
 			}
@@ -92,7 +92,10 @@ public class Runner2
 				System.out.println("You get to move " + (i-current+1) + " spaces.");
 				break;
 			}
-			
+			else
+			{
+				System.out.println("There is none of those tiles between you and the end.");
+			}
 		}
 		return(closest);
 	}
