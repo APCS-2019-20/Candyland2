@@ -42,7 +42,7 @@ public class Runner2
 				playa.setStuck(false);
 			}
 			//move
-			if(!playa.getSkip() || !playa.getStuck())
+			if(!playa.getSkip() && !playa.getStuck())
 			{
 				System.out.println("You drew a " + draw.getName() + " card.");
 				playa.setLocation(findClosest(playa.getLocation(), draw.getName()));
