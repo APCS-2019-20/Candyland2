@@ -2,17 +2,17 @@ package objects;
 
 public class Character 
 {
-	private static String gamePiece;
-	private static int location;
-	private static boolean skip;
-	private static boolean stuck;
+	private String gamePiece;
+	private int location;
+	private boolean skip;
+	private boolean stuck;
 	
 	public Character(String g, int l, boolean sk, boolean st)
 	{
-		setGamePiece(g);
-		setLocation(l);
-		setSkip(sk);
-		setStuck(st);
+		gamePiece = g;
+		location = l;
+		skip = sk;
+		stuck = st;
 	}
 
 	public String getGamePiece() 
@@ -22,14 +22,14 @@ public class Character
 
 	public void setGamePiece(String gamePiece) 
 	{
-		Character.gamePiece = gamePiece;
+		gamePiece = gamePiece;
 	}
 	public int getLocation() {
 		return location;
 	}
 
 	public void setLocation(int location) {
-		Character.location = location;
+		location = location;
 	}
 
 	public boolean getSkip() 
@@ -39,7 +39,7 @@ public class Character
 
 	public void setSkip(boolean skip) 
 	{
-		Character.skip = skip;
+		skip = skip;
 	}
 
 	public boolean getStuck() 
@@ -49,6 +49,6 @@ public class Character
 
 	public void setStuck(boolean stuck) 
 	{
-		Character.stuck = stuck;
+		stuck = stuck;
 	}
 }

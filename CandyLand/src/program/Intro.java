@@ -2,7 +2,7 @@ package program;
 
 import java.util.Scanner;
 
-public class intro {
+public class Intro {
 //Michael
 	public static void greeting()
 	{
