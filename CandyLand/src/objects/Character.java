@@ -15,39 +15,39 @@ public class Character
 		setStuck(st);
 	}
 
-	public static String getGamePiece() 
+	public String getGamePiece() 
 	{
 		return gamePiece;
 	}
 
-	public static void setGamePiece(String gamePiece) 
+	public void setGamePiece(String gamePiece) 
 	{
 		Character.gamePiece = gamePiece;
 	}
-	public static int getLocation() {
+	public int getLocation() {
 		return location;
 	}
 
-	public static void setLocation(int location) {
+	public void setLocation(int location) {
 		Character.location = location;
 	}
 
-	public static boolean getSkip() 
+	public boolean getSkip() 
 	{
 		return skip;
 	}
 
-	public static void setSkip(boolean skip) 
+	public void setSkip(boolean skip) 
 	{
 		Character.skip = skip;
 	}
 
-	public static boolean getStuck() 
+	public boolean getStuck() 
 	{
 		return stuck;
 	}
 
-	public static void setStuck(boolean stuck) 
+	public void setStuck(boolean stuck) 
 	{
 		Character.stuck = stuck;
 	}

@@ -1,5 +1,9 @@
 package program;
 
-public class exit {
-//Michael
+public class exit 
+{
+	 public static void win(String player)
+	 {
+		 
+	 }
 }

@@ -4,13 +4,11 @@ public class Card {
 //Danielle
 	
 	private String name;
-	private String place;
 	private int count;
 	
-	public Card(String n, String p, int c)
+	public Card(String n, int c)
 	{
 		name = n;
-		place = p;
 		count = c;
 	}
 
@@ -20,16 +18,6 @@ public class Card {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public String getPlace()
-	{
-		return place;
-	}
-
-	public void setPlace(String place)
-	{
-		this.place = place;
 	}
 
 	public int getCount()
