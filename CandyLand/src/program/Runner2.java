@@ -18,7 +18,7 @@ public class Runner2
 		String win;
 		//begining
 		intro.greeting();
-		settup.startup();
+		setup.startup();
 		//game
 		while(!atEnd())
 		{

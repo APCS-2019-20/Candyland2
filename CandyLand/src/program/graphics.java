@@ -1,5 +1,6 @@
 package program;
 
-public class graphics {
-//Jack
+public class graphics 
+{
+	//Jack
 }
