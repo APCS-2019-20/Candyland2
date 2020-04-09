@@ -76,22 +76,25 @@ public class Runner2
 	
 	public static int findClosest(int current, String name)
 	{
+		int count = 0;
 		current++;
 		int closest = current;
 		for(int i = current; i < Data.board.length; i++)
 		{
-			if(Data.board[i].getPlace().equals(name))
+			count++;
+			if(data.board[i].getPlace().equals(name))
 			{
 				closest = i;
-				System.out.println("You get to move " + i + " spaces.");
+				System.out.println("You get to move " + count + " spaces.");
 				break;
 			}
 			else if(Data.board[i].getColor().equals(name))
 			{
 				closest = i;
-				System.out.println("You get to move " + i + " spaces.");
+				System.out.println("You get to move " + count + " spaces.");
 				break;
 			}
+			
 		}
 		return(closest);
 	}
@@ -100,7 +103,7 @@ public class Runner2
 		boolean space134 = false;
 		for(Character p: Data.players)
 		{
-			if(p.getLocation() == Data.board.length)
+			if(p.getLocation()+1 == data.board.length)
 			{
 				space134 = true;
 			}
