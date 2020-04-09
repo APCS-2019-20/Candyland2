@@ -97,13 +97,13 @@ public class Runner2
 			if(Data.board[i].getPlace().equals(name))
 			{
 				closest = i;  
-				System.out.println("You get to move " + (i-current+1) + " spaces.");
+				System.out.println("You get to move " + (i-current) + " spaces.");
 				break;
 			}
 			else if(Data.board[i].getColor().equals(name))
 			{
 				closest = i;
-				System.out.println("You get to move " + (i-current+1) + " spaces.");
+				System.out.println("You get to move " + (i-current) + " spaces.");
 				break;
 			}
 			else if(i+1 == Data.board.length)
