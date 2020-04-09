@@ -56,22 +56,29 @@ public class Runner2
 			{
 				System.out.println("You are unable to draw. :(");
 			}
+			//takeShortcuts
+			if(Data.board[playa.getLocation()].getShortcut() > 0)
+			{
+				System.out.println("You have taken a shortcut.");
+				playa.setLocation(Data.board[playa.getLocation()].getShortcut());
+				System.out.println("You have landed on space " + (playa.getLocation()+1) + ".");
+			}
 			//unskipSkipper
 			if(playa.getSkip())
 			{
 				playa.setSkip(false);
 			}
 			//setSkippersAndStucks
-			if(Data.board[playa.getLocation()].getSkip())
+			if(Data.board[playa.getLocation()].isSkip())
 			{
 				System.out.println("Oh no! Black licorish! Your next turn will be skiped.");
 			}
-			if(Data.board[playa.getLocation()].getStuck())
+			if(Data.board[playa.getLocation()].isStuck())
 			{
 				System.out.println("Dang thats a sticky situation... You are stuck until you draw a " + Data.board[playa.getLocation()].getColor() + " card.");
 			}
-			playa.setSkip(Data.board[playa.getLocation()].getSkip());
-			playa.setStuck(Data.board[playa.getLocation()].getStuck());
+			playa.setSkip(Data.board[playa.getLocation()].isSkip());
+			playa.setStuck(Data.board[playa.getLocation()].isStuck());
 			//continue
 			System.out.println("");
 			System.out.println("Press enter to continue to the next players turn.");
@@ -84,9 +91,8 @@ public class Runner2
 	
 	public static int findClosest(int current, String name)
 	{
-		current++;
 		int closest = current;
-		for(int i = current; i < Data.board.length; i++)
+		for(int i = current+1; i < Data.board.length; i++)
 		{
 			if(Data.board[i].getPlace().equals(name))
 			{

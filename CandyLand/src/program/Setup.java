@@ -16,54 +16,50 @@ public class Setup
 		Data.colors[4] = "purple";
 		Data.colors[5] = "blue";
 	
-	for(int j = 0; j < 134; j++)
-	{
-		int random  =(int)( Math.random()*6);	
-		if(j%50 ==0)
+		for (int j = 0; j < 134; j++)
 		{
-			Data.board[j] = new Tile(Data.colors[random], "",-1, true, false);	
-		}
-		else if(j%55 ==0)
-		{
-			Data.board[j] = new Tile(Data.colors[random], "",-1, false, true);	
-		}
-		else if(j == 4 )
-		{
-			Data.board[j] = new Tile("pink", "",59, false, false);	
-		}
-		 if(j == 9 )
-		{
-			Data.board[j] = new Tile("pink", "Plumpy",-1, false, false);	
-		}
-		 if(j == 18 )
+			if (j % 50 == 0)
 			{
-				Data.board[j] = new Tile("pink", "Candy Cane Forrest",-1, false, false);	
-			}
-		 if(j == 43 )
+				Data.board[j] = new Tile(Data.colors[(int) (Math.random() * 6)], "", -1, true, false);
+			} 
+			else if (j % 55 == 0)
 			{
-				Data.board[j] = new Tile("pink", "Jolly",-1, false, false);	
-			}
-		 if(j == 75 )
+				Data.board[j] = new Tile(Data.colors[(int) (Math.random() * 6)], "", -1, false, true);
+			} 
+			else if (j == 1)
 			{
-				Data.board[j] = new Tile("pink", "Gramma Nutt",-1, false, false);	
+				Data.board[j] = new Tile("pink", "", 59, false, false);
 			}
-		 if(j == 96 )
+			else if (j == 3)
 			{
-				Data.board[j] = new Tile("pink", "Princess Lolly",-1, false, false);	
+				Data.board[j] = new Tile("pink", "Plumpy", -1, false, false);
 			}
-		 if(j == 104 )
+			else if (j == 11)
 			{
-				Data.board[j] = new Tile("pink", "Ice Cream Sea",-1, false, false);	
+				Data.board[j] = new Tile("pink", "Candy Cane Forrest", -1, false, false);
 			}
-		
-		else
-		{
-			Data.board[j] = new Tile(Data.colors[random], "",-1, false, false);
+			else if (j == 13)
+			{
+				Data.board[j] = new Tile("pink", "Jolly", -1, false, false);
+			}
+			else if (j == 21)
+			{
+				Data.board[j] = new Tile("pink", "Gramma Nutt", -1, false, false);
+			}
+			else if (j == 23)
+			{
+				Data.board[j] = new Tile("pink", "Princess Lolly", -1, false, false);
+			}
+			else if (j == 31)
+			{
+				Data.board[j] = new Tile("pink", "Ice Cream Sea", -1, false, false);
+			}
+			else 
+			{
+				Data.board[j] = new Tile(Data.colors[(int) (Math.random() * 6)], "", -1, false, false);
+			}
+			//System.out.println("Data.board[" + j + "]: " + Data.board[j].getColor() + " " + Data.board[j].getPlace() + " " + Data.board[j].getShortcut() + " " + Data.board[j].isSkip() + " " + Data.board[j].isStuck());
 		}
-	}
-
-
-		
 	}
 
 	public static void cards()
@@ -75,33 +71,33 @@ public class Setup
 		Data.colors[4] = "purple";
 		Data.colors[5] = "blue";
 	
-		for(int k = 0; k < 61; k++)
+		for(int k = 0; k < 66; k++)
 		{
 
 			
 			int random  = (int)( Math.random()*6 );	
 			//System.out.println(data.colors[random]);
-			if(k == 26)
+			if(k == 1)
 			{
 				Data.cards[k] = new Card("Jolly",  0);
 			}
-			if(k == 30)
+			else if(k == 3)
 			{
 				Data.cards[k] = new Card("Candy Cane Forrest",  0);
 			}
-			if(k == 10)
+			else if(k == 11)
 			{
 				Data.cards[k] = new Card("Plumpy",  0);
 			}
-			if(k == 28)
+			else if(k == 13)
 			{
 				Data.cards[k] = new Card("Gramma Nutt",  0);
 			}
-			if(k == 50)
+			else if(k == 21)
 			{
 				Data.cards[k] = new Card("Princess Lolly",  0);
 			}
-			if(k == 60)
+			else if(k == 23)
 			{
 				Data.cards[k] = new Card("Ice Cream Sea", 0);
 			}
@@ -113,6 +109,7 @@ public class Setup
 			{
 				Data.cards[k] = new Card(Data.colors[random], 0);
 			}
+			//System.out.println("Data.cards[" + k + "] " + Data.cards[k].getName() + " " + Data.cards[k].getCount());
 		}
 	}
 
@@ -130,7 +127,6 @@ public class Setup
 		//System.out.println("Length: " + Data.players.size() + " MostResent: " + Data.players.get(Data.players.size()-1).getGamePiece() + " Oldest: " + Data.players.get(0).getGamePiece());
 		Data.players.add(new Character("Icecream Cone", 0, false, false));
 		//System.out.println("Length: " + Data.players.size() + " MostResent: " + Data.players.get(Data.players.size()-1).getGamePiece() + " Oldest: " + Data.players.get(0).getGamePiece());
-		//System.out.println("");
 	}
 }
 	
