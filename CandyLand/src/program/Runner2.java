@@ -17,7 +17,7 @@ public class Runner2
 		String win;
 		Scanner enta = new Scanner(System.in);
 		//begining
-		//intro.greeting();
+		Intro.greeting();
 		Setup.startup();
 		//game
 		while(!atEnd())
