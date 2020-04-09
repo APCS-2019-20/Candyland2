@@ -101,7 +101,6 @@ public class setup
 			{
 				data.cards[k] = new Card(data.colors[random],  1);
 			}
-			
 			else
 			{
 				data.cards[k] = new Card(data.colors[random], 0);
@@ -115,10 +114,10 @@ public class setup
     //	Scanner userInput = new Scanner (System.in);
 		board();
 		cards();
-		data.players.add(new Character("Gingerbread man", 0, false, false ));
+		data.players.add(new Character("Gingerbread man", 0, false, false));
 		data.players.add(new Character("CandyCane", 0, false, false ));
 		data.players.add(new Character("Gumdrop", 0, false, false ));
-		data.players.add(new Character("Icecream Cone", 0, false, false ));
+		data.players.add(new Character("Icecream Cone", 0, false, false));
 	}
 }
 	
