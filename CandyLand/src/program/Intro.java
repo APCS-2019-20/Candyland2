@@ -27,6 +27,11 @@ public class Intro {
 		if( rules.equals("yes"))
 		{
 			System.out.println("Here are the rules");
+			System.out.println("");
+			System.out.println("Rule1: There are no rules!");
+			System.out.println("Rule2: Rule one is a lie. There are in face \"rules\" as this is a board game.");
+			System.out.println("More rules can be found here: https://howdoyouplayit.com/candy-land-rules-play-candy-land/");
+			System.out.println("");
 			System.out.println("There will be a total of 4 players,");
 			System.out.println();
 			System.out.println();
@@ -35,8 +40,6 @@ public class Intro {
 			System.out.println();
 			System.out.println("Press enter to continue.");
 			String ready = userInput.nextLine();
-			
-		
 		}
 		if(rules.equals("no"))
 		{
