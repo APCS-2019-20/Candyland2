@@ -20,16 +20,16 @@ public class Character
 		return gamePiece;
 	}
 
-	public void setGamePiece(String gamePiece) 
+	public void setGamePiece(String g) 
 	{
-		gamePiece = gamePiece;
+		gamePiece = g;
 	}
 	public int getLocation() {
 		return location;
 	}
 
-	public void setLocation(int location) {
-		location = location;
+	public void setLocation(int l) {
+		location = l;
 	}
 
 	public boolean getSkip() 
@@ -37,9 +37,9 @@ public class Character
 		return skip;
 	}
 
-	public void setSkip(boolean skip) 
+	public void setSkip(boolean s) 
 	{
-		skip = skip;
+		skip = s;
 	}
 
 	public boolean getStuck() 
@@ -47,8 +47,8 @@ public class Character
 		return stuck;
 	}
 
-	public void setStuck(boolean stuck) 
+	public void setStuck(boolean s) 
 	{
-		stuck = stuck;
+		stuck = s;
 	}
 }
