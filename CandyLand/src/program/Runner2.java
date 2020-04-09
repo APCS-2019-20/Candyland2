@@ -42,7 +42,7 @@ public class Runner2
 				playa.setStuck(false);
  		 }
 			//move
-			if(!playa.getSkip() || !playa.getStuck())
+			if(!playa.getSkip() && !playa.getStuck())
 			{
 				System.out.println("You drew a " + draw.getName() + " card.");
 				playa.setLocation(findClosest(playa.getLocation(), draw.getName()));
@@ -51,6 +51,17 @@ public class Runner2
 					playa.setLocation(findClosest(playa.getLocation(), draw.getName()));
 				}
 				System.out.println("You have landed on space " + (playa.getLocation()+1) + ".");
+				//setSkippersAndStucks
+				if(Data.board[playa.getLocation()].isSkip())
+				{
+					System.out.println("Oh no! Black licorish! Your next turn will be skiped.");
+				}
+				if(Data.board[playa.getLocation()].isStuck())
+				{
+					System.out.println("Dang thats a sticky situation... You are stuck until you draw a " + Data.board[playa.getLocation()].getColor() + " card.");
+				}
+				playa.setSkip(Data.board[playa.getLocation()].isSkip());
+				playa.setStuck(Data.board[playa.getLocation()].isStuck());
 			}
 			else
 			{
@@ -68,17 +79,6 @@ public class Runner2
 			{
 				playa.setSkip(false);
 			}
-			//setSkippersAndStucks
-			if(Data.board[playa.getLocation()].isSkip())
-			{
-				System.out.println("Oh no! Black licorish! Your next turn will be skiped.");
-			}
-			if(Data.board[playa.getLocation()].isStuck())
-			{
-				System.out.println("Dang thats a sticky situation... You are stuck until you draw a " + Data.board[playa.getLocation()].getColor() + " card.");
-			}
-			playa.setSkip(Data.board[playa.getLocation()].isSkip());
-			playa.setStuck(Data.board[playa.getLocation()].isStuck());
 			//continue
 			System.out.println("");
 			System.out.println("Press enter to continue to the next players turn.");
