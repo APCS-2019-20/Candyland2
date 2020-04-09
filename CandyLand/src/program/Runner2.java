@@ -33,7 +33,7 @@ public class Runner2
 			if(!playa.getSkip())
 			{
 				System.out.println("Press enter to draw a card.");
-				enta.nextLine();
+				enta.nextLine(); 
 			}
 			//unstickStickers
 			if(draw.getName().equals(Data.board[playa.getLocation()].getColor()) && playa.getStuck())
