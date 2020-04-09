@@ -38,9 +38,9 @@ public class Runner2
 			//unstickStickers
 			if(draw.getName().equals(Data.board[playa.getLocation()].getColor()) && playa.getStuck())
 			{
-				System.out.println("You drew the correct color card, so you are no longer stuck.");
+			 System.out.println("You drew the correct color card, so you are no longer stuck.");
 				playa.setStuck(false);
-			}
+ 		 }
 			//move
 			if(!playa.getSkip() || !playa.getStuck())
 			{
