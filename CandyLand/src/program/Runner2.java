@@ -82,7 +82,7 @@ public class Runner2
 		for(int i = current; i < Data.board.length; i++)
 		{
 			count++;
-			if(data.board[i].getPlace().equals(name))
+			if(Data.board[i].getPlace().equals(name))
 			{
 				closest = i;
 				System.out.println("You get to move " + count + " spaces.");
@@ -103,7 +103,7 @@ public class Runner2
 		boolean space134 = false;
 		for(Character p: Data.players)
 		{
-			if(p.getLocation()+1 == data.board.length)
+			if(p.getLocation()+1 == Data.board.length)
 			{
 				space134 = true;
 			}
