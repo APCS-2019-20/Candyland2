@@ -62,6 +62,14 @@ public class Runner2
 				playa.setSkip(false);
 			}
 			//setSkippersAndStucks
+			if(Data.board[playa.getLocation()].getSkip())
+			{
+				System.out.println("Oh no! Black licorish! Your next turn will be skiped.");
+			}
+			if(Data.board[playa.getLocation()].getStuck())
+			{
+				System.out.println("Dang thats a sticky situation... You are stuck until you draw a " + Data.board[playa.getLocation()].getColor() + " card.");
+			}
 			playa.setSkip(Data.board[playa.getLocation()].getSkip());
 			playa.setStuck(Data.board[playa.getLocation()].getStuck());
 			//continue
@@ -92,7 +100,7 @@ public class Runner2
 				System.out.println("You get to move " + (i-current+1) + " spaces.");
 				break;
 			}
-			else
+			else if(i+1 == Data.board.length)
 			{
 				System.out.println("There is none of those tiles between you and the end.");
 			}
