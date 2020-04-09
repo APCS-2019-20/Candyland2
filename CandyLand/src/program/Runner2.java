@@ -17,7 +17,7 @@ public class Runner2
 		String win;
 		Scanner enta = new Scanner(System.in);
 		//begining
-		//intro.greeting();
+		Intro.greeting();
 		Setup.startup();
 		//game
 		while(!atEnd())
@@ -92,7 +92,10 @@ public class Runner2
 				System.out.println("You get to move " + (i-current+1) + " spaces.");
 				break;
 			}
-			
+			else
+			{
+				System.out.println("There is none of those tiles between you and the end.");
+			}
 		}
 		return(closest);
 	}
