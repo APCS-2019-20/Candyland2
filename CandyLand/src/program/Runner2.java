@@ -32,9 +32,9 @@ public class Runner2
 				System.out.println("You drew the correct color card, so you are no longer stuck.");
 				playa.setStuck(false);
 			}
-			if(!playa.getSkip() || !playa.getStuck())
+			 if(!playa.getSkip() || !playa.getStuck())
 			{
-				System.out.println();
+				System.out.println("");
 				playa.setLocation(findClosest(playa.getLocation(), draw.getName()));
 				if(draw.getCount() == 1)
 				{

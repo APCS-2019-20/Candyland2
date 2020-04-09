@@ -15,10 +15,10 @@ public class setup
 		data.colors[3] = "orange";
 		data.colors[4] = "purple";
 		data.colors[5] = "blue";
-	int random;
+	
 	for(int j = 0; j < 134; j++)
 	{
-		random  =(int) Math.random()*6;	
+		int random  =(int)( Math.random()*6);	
 		if(j%50 ==0)
 		{
 			data.board[j] = new Tile(data.colors[random], "",-1, true, false);	
@@ -68,11 +68,19 @@ public class setup
 
 	public static void cards()
 	{
-		int random;
+		data.colors[0] = "red";
+		data.colors[1] = "green";
+		data.colors[2] = "yellow";
+		data.colors[3] = "orange";
+		data.colors[4] = "purple";
+		data.colors[5] = "blue";
 	
 		for(int k = 0; k < 61; k++)
 		{
-			random  =(int) Math.random()*6;	
+
+			
+			int random  = (int)( Math.random()*6 );	
+			//System.out.println(data.colors[random]);
 			if(k == 26)
 			{
 				data.cards[k] = new Card("Jolly",  0);
@@ -85,7 +93,7 @@ public class setup
 			{
 				data.cards[k] = new Card("Plumpy",  0);
 			}
-			if(k == 26)
+			if(k == 28)
 			{
 				data.cards[k] = new Card("Gramma Nutt",  0);
 			}
